@@ -1,0 +1,73 @@
+.container {
+}
+
+.title {
+  margin: 50px 0px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: capitalize;
+  width: 15%;
+  height: 80px;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.category.scouting {
+  background-color: #C3A793; /* Light Brown */
+}
+
+.category.reviews {
+  background-color: #507050; /* Faded Camo Green */
+}
+
+.category.strategies {
+  background-color: #9D6B5C; /* Another Light Brown */
+}
+
+.category.wilderness {
+  background-color: #96AA5B; /* Another Faded Camo Green */
+}
+
+.category.tales {
+  background-color: #8D7852; /* Another Brown Shade */
+}
+
+.category.community {
+  background-color: #8E9769; /* Olive Green */
+}
+
+.image {
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1280px) {
+  .category {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .category {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .category {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .category {
+    width: 100%;
+  }
+}

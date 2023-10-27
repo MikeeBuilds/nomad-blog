@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.social{
+    display: flex;
+    gap: 10px;
+    f1
+}
+
+.logo{
+
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+}

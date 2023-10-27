@@ -1,0 +1,144 @@
+.container {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px 0;
+  }
+  
+  .title {
+    margin: 50px 0px;
+  }
+  
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .category {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+    width: 15%;
+    height: 80px;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(255, 0, 0, 0.5); /* Red with 50% opacity */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image {
+    border-radius: 50%;
+  }
+  
+  @media screen and (max-width: 1280px) {
+    .category {
+      width: 20%;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .category {
+      width: 25%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .category {
+      width: 45%;
+    }
+  }
+  
+  @media screen and (max-width: 640px) {
+    .category {
+      width: 100%;
+    }
+  }
+  
+  .link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 0, 0, 0.05);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    z-index: 1;
+    transition: 0.5s;
+  }
+  
+  .category:hover .link {
+    letter-spacing: 3px;
+  }
+  
+  .link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+    transform: skewX(45deg) translate(0);
+    transition: 0.5s;
+    filter: blur(0px);
+  }
+  
+  .category:hover .link::before {
+    transform: skewX(45deg) translate(200px);
+  }
+  
+  .category::before,
+  .category::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+  }
+  
+  .category:hover::before,
+  .category:hover::after {
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+  }
+  
+  .category:nth-child(1)::before,
+  .category:nth-child(1)::after {
+    background: #ff1f71;
+    box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71, 0 0 60px #ff1f71;
+  }
+  
+  .category:nth-child(2)::before,
+  .category:nth-child(2)::after {
+    background: #2db2ff;
+    box-shadow: 0 0 5px #2db2ff, 0 0 15px #2db2ff, 0 0 30px #2db2ff, 0 0 60px #2db2ff;
+  }
+  
+  .category:nth-child(3)::before,
+  .category:nth-child(3)::after {
+    background: #1eff45;
+    box-shadow: 0 0 5px #1eff45, 0 0 15px #1eff45, 0 0 30px #1eff45, 0 0 60px #1eff45;
+  }
+  

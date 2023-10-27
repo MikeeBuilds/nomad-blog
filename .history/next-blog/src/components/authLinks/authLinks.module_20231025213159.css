@@ -1,0 +1,12 @@
+.link{
+    cursor: pointer;
+}
+
+.burger {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+

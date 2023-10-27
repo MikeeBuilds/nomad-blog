@@ -1,0 +1,10 @@
+.container{
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.imageContainer{
+
+}
